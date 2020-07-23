@@ -1,4 +1,5 @@
 ﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Remote;
 using WebAutomation.BaseTest;
 
 namespace WebAutomation.PageObjects
@@ -6,9 +7,7 @@ namespace WebAutomation.PageObjects
     public class CreateAccount_PO : Base_Page
     {
         //pass driver to construct the base_page class
-        public CreateAccount_PO(IWebDriver webDriver) : base(webDriver)
-        {
-        }
+        public CreateAccount_PO(RemoteWebDriver webDriver) : base(webDriver) { }
 
         private By mrRadioButton = By.Id("uniform-id_gender1");
         private By firstNameTextBox = By.Id("customer_firstname");
@@ -42,14 +41,14 @@ namespace WebAutomation.PageObjects
             getFormNameAndLastName = getFirstName() + " " + getLastName();
             typePassword();
             selectDateOfBirth(day, month, year);
+            typeCompany();
             clickOnNewsLetter();
             clickOnOptIn();
-            typeCompany();
             typeAddress1();
             typeAddress2();
             typeCity();
-            selectState(state);
             typePostalCode();
+            selectState(state);
             typeAdditionalInfo();
             typeHomePhone();
             typeMobilePhone();
@@ -124,7 +123,7 @@ namespace WebAutomation.PageObjects
 
         public void selectState(string state)
         {
-            sendKeys(stateComboBox, state);
+            selectElementInComboBox(stateComboBox, state);
         }
 
         public void typePostalCode()

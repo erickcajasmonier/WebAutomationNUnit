@@ -1,5 +1,6 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Interactions;
+using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
 using System;
 using System.Linq;
@@ -8,11 +9,11 @@ namespace WebAutomation.BaseTest
 {
     public class Base_Page
     {
-        protected IWebDriver webDriver;
+        protected RemoteWebDriver webDriver;
         protected WebDriverWait wait;
         protected Random random = new Random();
 
-        public Base_Page(IWebDriver driver) {
+        public Base_Page(RemoteWebDriver driver) {
             webDriver = driver;
             wait = new WebDriverWait(webDriver, TimeSpan.FromSeconds(2));
             wait.IgnoreExceptionTypes(typeof(NoSuchElementException));
@@ -65,7 +66,7 @@ namespace WebAutomation.BaseTest
         {
             try
             {
-                wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(element));
+                wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(element));
                 findElementBy(element).Click();
             } catch(Exception)
             {
