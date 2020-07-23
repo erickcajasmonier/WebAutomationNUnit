@@ -4620,11 +4620,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ecaja\\source\\repos\\WebAutomation\\WebAutomation\\WebAutomation.csproj",
+      "projectUniqueName": "C:\\Users\\ecaja\\OneDrive\\Escritorio\\GitProjects\\WebAutomationNUnit\\WebAutomation\\WebAutomation.csproj",
       "projectName": "WebAutomation",
-      "projectPath": "C:\\Users\\ecaja\\source\\repos\\WebAutomation\\WebAutomation\\WebAutomation.csproj",
+      "projectPath": "C:\\Users\\ecaja\\OneDrive\\Escritorio\\GitProjects\\WebAutomationNUnit\\WebAutomation\\WebAutomation.csproj",
       "packagesPath": "C:\\Users\\ecaja\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ecaja\\source\\repos\\WebAutomation\\WebAutomation\\obj\\",
+      "outputPath": "C:\\Users\\ecaja\\OneDrive\\Escritorio\\GitProjects\\WebAutomationNUnit\\WebAutomation\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ecaja\\AppData\\Roaming\\NuGet\\NuGet.Config",

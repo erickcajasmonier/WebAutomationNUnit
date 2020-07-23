@@ -1,5 +1,6 @@
 using NUnit.Framework;
 using System;
+using System.Threading;
 using WebAutomation.PageObjects;
 
 namespace WebAutomation
@@ -72,6 +73,9 @@ namespace WebAutomation
                 //validate correct user name
                 Assert.AreEqual(getMyAccountFullName, getFormFullName);
             });
+
+            //FIXME: sleep added to show my account page
+            Thread.Sleep(3000);
         }
     }
 }
