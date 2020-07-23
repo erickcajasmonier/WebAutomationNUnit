@@ -5,8 +5,22 @@ using WebAutomation.PageObjects;
 
 namespace WebAutomation
 {
-    internal class SignIn_Test : BaseTest.Base_Test
+    //FIXME: set the browsers that you would like to run the test
+    [TestFixture("firefox")]
+    [TestFixture("chrome")]
+    public class SignIn_Test : BaseTest.Base_Test
     {
+        /*
+         * The reason to make separated tests for opening home page,
+         * opening sign in page, fill the user info form, is because
+         * if one of those tests fails there is no reason to continue
+         * with the rest of the tests (in order to validate a correct 
+         * sign in successful we need to pass all those previous tests).
+         */
+
+        //pass browser to construct the base_test class
+        public SignIn_Test(string browser) : base(browser) { }
+
         //initialize all page object classes that will be used for the test
         Home_PO homePage;
         Authentication_PO authenticationPage;

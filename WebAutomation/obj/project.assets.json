@@ -467,6 +467,12 @@
           "lib/netstandard1.0/_._": {}
         }
       },
+      "Selenium.InternetExplorer.WebDriver/3.150.1": {
+        "type": "package",
+        "build": {
+          "build/Selenium.InternetExplorer.WebDriver.targets": {}
+        }
+      },
       "Selenium.Support/3.141.0": {
         "type": "package",
         "dependencies": {
@@ -489,6 +495,18 @@
         },
         "runtime": {
           "lib/netstandard2.0/WebDriver.dll": {}
+        }
+      },
+      "Selenium.WebDriver.ChromeDriver/84.0.4147.3001": {
+        "type": "package",
+        "build": {
+          "build/Selenium.WebDriver.ChromeDriver.targets": {}
+        }
+      },
+      "Selenium.WebDriver.GeckoDriver/0.26.0.5": {
+        "type": "package",
+        "build": {
+          "build/Selenium.WebDriver.GeckoDriver.targets": {}
         }
       },
       "System.AppContext/4.1.0": {
@@ -1937,6 +1955,19 @@
         "runtime.native.system.nuspec"
       ]
     },
+    "Selenium.InternetExplorer.WebDriver/3.150.1": {
+      "sha512": "pPW6WMvyrArFLSKnRGj9lKsC06FqnNlUC5lC+Y2ZOM+rBY4nB8JDAIelOySLKmk+yIqKE20CSd8GDrECFHObag==",
+      "type": "package",
+      "path": "selenium.internetexplorer.webdriver/3.150.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Selenium.InternetExplorer.WebDriver.targets",
+        "driver/IEDriverServer.exe",
+        "selenium.internetexplorer.webdriver.3.150.1.nupkg.sha512",
+        "selenium.internetexplorer.webdriver.nuspec"
+      ]
+    },
     "Selenium.Support/3.141.0": {
       "sha512": "F4sxMCXGyqWtbw5qsniJRgza2UsBnslHwFgNA2p7hPxvJhqg73lyXu/ZscJ7FSfRvq3eJrosysv92+4sZ3vWsg==",
       "type": "package",
@@ -1973,6 +2004,41 @@
         "lib/netstandard2.0/WebDriver.xml",
         "selenium.webdriver.3.141.0.nupkg.sha512",
         "selenium.webdriver.nuspec"
+      ]
+    },
+    "Selenium.WebDriver.ChromeDriver/84.0.4147.3001": {
+      "sha512": "uNaEof82PiEqWKSRJNuejxxq427yIDMiEyyfi0BS3WbLRlLLtKfPV3MKVLc6VP6uWp167iOzyYy3LlQXSJ+71A==",
+      "type": "package",
+      "path": "selenium.webdriver.chromedriver/84.0.4147.3001",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/DefinePropertiesChromeDriver.targets",
+        "build/Selenium.WebDriver.ChromeDriver.targets",
+        "driver/linux64/chromedriver",
+        "driver/mac64/chromedriver",
+        "driver/win32/chromedriver.exe",
+        "nupkg-icon.png",
+        "selenium.webdriver.chromedriver.84.0.4147.3001.nupkg.sha512",
+        "selenium.webdriver.chromedriver.nuspec"
+      ]
+    },
+    "Selenium.WebDriver.GeckoDriver/0.26.0.5": {
+      "sha512": "GVk9fv06AOKSbrqD0dNIhup7OiT+d4mMmWMm+NIUj4SRD/UvbWrswso7dptOKFwOmKsE0W/s+ewzJtMgj/Jucg==",
+      "type": "package",
+      "path": "selenium.webdriver.geckodriver/0.26.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/DefinePropertiesGeckoDriver.targets",
+        "build/Selenium.WebDriver.GeckoDriver.targets",
+        "driver/linux64/geckodriver",
+        "driver/mac64/geckodriver",
+        "driver/win32/geckodriver.exe",
+        "driver/win64/geckodriver.exe",
+        "nupkg-icon.png",
+        "selenium.webdriver.geckodriver.0.26.0.5.nupkg.sha512",
+        "selenium.webdriver.geckodriver.nuspec"
       ]
     },
     "System.AppContext/4.1.0": {
@@ -4609,8 +4675,11 @@
       "DotNetSeleniumExtras.WaitHelpers >= 3.11.0",
       "Microsoft.NET.Test.Sdk >= 16.6.1",
       "NUnit3TestAdapter >= 3.17.0",
+      "Selenium.InternetExplorer.WebDriver >= 3.150.1",
       "Selenium.Support >= 3.141.0",
       "Selenium.WebDriver >= 3.141.0",
+      "Selenium.WebDriver.ChromeDriver >= 84.0.4147.3001",
+      "Selenium.WebDriver.GeckoDriver >= 0.26.0.5",
       "nunit >= 3.12.0"
     ]
   },
@@ -4663,6 +4732,10 @@
             "target": "Package",
             "version": "[3.17.0, )"
           },
+          "Selenium.InternetExplorer.WebDriver": {
+            "target": "Package",
+            "version": "[3.150.1, )"
+          },
           "Selenium.Support": {
             "target": "Package",
             "version": "[3.141.0, )"
@@ -4670,6 +4743,14 @@
           "Selenium.WebDriver": {
             "target": "Package",
             "version": "[3.141.0, )"
+          },
+          "Selenium.WebDriver.ChromeDriver": {
+            "target": "Package",
+            "version": "[84.0.4147.3001, )"
+          },
+          "Selenium.WebDriver.GeckoDriver": {
+            "target": "Package",
+            "version": "[0.26.0.5, )"
           },
           "nunit": {
             "target": "Package",

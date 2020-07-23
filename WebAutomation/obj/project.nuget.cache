@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "220+hld8N1Hi2aODL6jhAD8fBtlk9mkgRahBqi3+TOujqFk2pwTGM2dyMVMTBG3fwKpPbOag56Z4SCqflEl4VQ==",
+  "dgSpecHash": "zx90BmhBGAHgh8gIuJTmXvHvN08E3q50dD1joQIiMlkxQtpYO+hR8dt6rzPbTDCaNNpOFj+ROjJnVaHmVF9HfA==",
   "success": true,
   "projectFilePath": "C:\\Users\\ecaja\\OneDrive\\Escritorio\\GitProjects\\WebAutomationNUnit\\WebAutomation\\WebAutomation.csproj",
   "expectedPackageFiles": [
@@ -21,8 +21,11 @@
     "C:\\Users\\ecaja\\.nuget\\packages\\nunit\\3.12.0\\nunit.3.12.0.nupkg.sha512",
     "C:\\Users\\ecaja\\.nuget\\packages\\nunit3testadapter\\3.17.0\\nunit3testadapter.3.17.0.nupkg.sha512",
     "C:\\Users\\ecaja\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
+    "C:\\Users\\ecaja\\.nuget\\packages\\selenium.internetexplorer.webdriver\\3.150.1\\selenium.internetexplorer.webdriver.3.150.1.nupkg.sha512",
     "C:\\Users\\ecaja\\.nuget\\packages\\selenium.support\\3.141.0\\selenium.support.3.141.0.nupkg.sha512",
     "C:\\Users\\ecaja\\.nuget\\packages\\selenium.webdriver\\3.141.0\\selenium.webdriver.3.141.0.nupkg.sha512",
+    "C:\\Users\\ecaja\\.nuget\\packages\\selenium.webdriver.chromedriver\\84.0.4147.3001\\selenium.webdriver.chromedriver.84.0.4147.3001.nupkg.sha512",
+    "C:\\Users\\ecaja\\.nuget\\packages\\selenium.webdriver.geckodriver\\0.26.0.5\\selenium.webdriver.geckodriver.0.26.0.5.nupkg.sha512",
     "C:\\Users\\ecaja\\.nuget\\packages\\system.appcontext\\4.1.0\\system.appcontext.4.1.0.nupkg.sha512",
     "C:\\Users\\ecaja\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\ecaja\\.nuget\\packages\\system.collections.nongeneric\\4.3.0\\system.collections.nongeneric.4.3.0.nupkg.sha512",

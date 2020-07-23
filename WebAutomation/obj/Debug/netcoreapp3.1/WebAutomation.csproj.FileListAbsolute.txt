@@ -100,14 +100,13 @@ C:\Users\ecaja\source\repos\WebAutomation\WebAutomation\obj\Debug\netcoreapp3.1\
 C:\Users\ecaja\source\repos\WebAutomation\WebAutomation\bin\Debug\netcoreapp3.1\WebDriver.Support.dll
 C:\Users\ecaja\source\repos\WebAutomation\WebAutomation\bin\Debug\netcoreapp3.1\SeleniumExtras.WaitHelpers.dll
 C:\Users\ecaja\source\repos\WebAutomation\WebAutomation\obj\Debug\netcoreapp3.1\WebAutomation.csproj.CoreCompileInputs.cache
-C:\Users\ecaja\OneDrive\Escritorio\GitProjects\WebAutomationNUnit\WebAutomation\bin\Debug\netcoreapp3.1\testhost.exe
 C:\Users\ecaja\OneDrive\Escritorio\GitProjects\WebAutomationNUnit\WebAutomation\bin\Debug\netcoreapp3.1\testhost.dll
+C:\Users\ecaja\OneDrive\Escritorio\GitProjects\WebAutomationNUnit\WebAutomation\bin\Debug\netcoreapp3.1\testhost.exe
 C:\Users\ecaja\OneDrive\Escritorio\GitProjects\WebAutomationNUnit\WebAutomation\bin\Debug\netcoreapp3.1\NUnit3.TestAdapter.dll
 C:\Users\ecaja\OneDrive\Escritorio\GitProjects\WebAutomationNUnit\WebAutomation\bin\Debug\netcoreapp3.1\NUnit3.TestAdapter.pdb
 C:\Users\ecaja\OneDrive\Escritorio\GitProjects\WebAutomationNUnit\WebAutomation\bin\Debug\netcoreapp3.1\nunit.engine.dll
 C:\Users\ecaja\OneDrive\Escritorio\GitProjects\WebAutomationNUnit\WebAutomation\bin\Debug\netcoreapp3.1\nunit.engine.api.dll
 C:\Users\ecaja\OneDrive\Escritorio\GitProjects\WebAutomationNUnit\WebAutomation\bin\Debug\netcoreapp3.1\nunit.engine.core.dll
-C:\Users\ecaja\OneDrive\Escritorio\GitProjects\WebAutomationNUnit\WebAutomation\bin\Debug\netcoreapp3.1\chromedriver.exe
 C:\Users\ecaja\OneDrive\Escritorio\GitProjects\WebAutomationNUnit\WebAutomation\bin\Debug\netcoreapp3.1\WebAutomation.deps.json
 C:\Users\ecaja\OneDrive\Escritorio\GitProjects\WebAutomationNUnit\WebAutomation\bin\Debug\netcoreapp3.1\WebAutomation.runtimeconfig.json
 C:\Users\ecaja\OneDrive\Escritorio\GitProjects\WebAutomationNUnit\WebAutomation\bin\Debug\netcoreapp3.1\WebAutomation.runtimeconfig.dev.json
@@ -194,7 +193,6 @@ C:\Users\ecaja\OneDrive\Escritorio\GitProjects\WebAutomationNUnit\WebAutomation\
 C:\Users\ecaja\OneDrive\Escritorio\GitProjects\WebAutomationNUnit\WebAutomation\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 C:\Users\ecaja\OneDrive\Escritorio\GitProjects\WebAutomationNUnit\WebAutomation\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 C:\Users\ecaja\OneDrive\Escritorio\GitProjects\WebAutomationNUnit\WebAutomation\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-C:\Users\ecaja\OneDrive\Escritorio\GitProjects\WebAutomationNUnit\WebAutomation\obj\Debug\netcoreapp3.1\WebAutomation.csprojAssemblyReference.cache
 C:\Users\ecaja\OneDrive\Escritorio\GitProjects\WebAutomationNUnit\WebAutomation\obj\Debug\netcoreapp3.1\WebAutomation.AssemblyInfoInputs.cache
 C:\Users\ecaja\OneDrive\Escritorio\GitProjects\WebAutomationNUnit\WebAutomation\obj\Debug\netcoreapp3.1\WebAutomation.AssemblyInfo.cs
 C:\Users\ecaja\OneDrive\Escritorio\GitProjects\WebAutomationNUnit\WebAutomation\obj\Debug\netcoreapp3.1\WebAutomation.csproj.CoreCompileInputs.cache
@@ -202,3 +200,5 @@ C:\Users\ecaja\OneDrive\Escritorio\GitProjects\WebAutomationNUnit\WebAutomation\
 C:\Users\ecaja\OneDrive\Escritorio\GitProjects\WebAutomationNUnit\WebAutomation\obj\Debug\netcoreapp3.1\WebAutomation.dll
 C:\Users\ecaja\OneDrive\Escritorio\GitProjects\WebAutomationNUnit\WebAutomation\obj\Debug\netcoreapp3.1\WebAutomation.pdb
 C:\Users\ecaja\OneDrive\Escritorio\GitProjects\WebAutomationNUnit\WebAutomation\obj\Debug\netcoreapp3.1\WebAutomation.genruntimeconfig.cache
+C:\Users\ecaja\OneDrive\Escritorio\GitProjects\WebAutomationNUnit\WebAutomation\bin\Debug\netcoreapp3.1\MicrosoftWebDriver.exe
+C:\Users\ecaja\OneDrive\Escritorio\GitProjects\WebAutomationNUnit\WebAutomation\obj\Debug\netcoreapp3.1\WebAutomation.csprojAssemblyReference.cache
