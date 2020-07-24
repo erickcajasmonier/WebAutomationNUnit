@@ -12,19 +12,19 @@ namespace WebAutomation.PageObjects
         private By emailAddressCreateTextBox = By.Id("email_create");
         private By createAccountButton = By.Id("SubmitCreate");
 
-        public void createNewAccount()
+        public void CreateNewAccount()
         {
-            typeEmailAddress();
-            clickOnCreateAccount();
+            TypeEmailAddress();
+            ClickOnCreateAccount();
         }
 
-        public void typeEmailAddress()
+        public void TypeEmailAddress()
         {
-            sendKeys(emailAddressCreateTextBox, generateRandomLetterAndNumbers(6) + "@hotmail.com");
+            SendKeys(emailAddressCreateTextBox, GenerateRandomLetterAndNumbers(6) + "@hotmail.com");
         }
 
-        public void clickOnCreateAccount() {
-            click(createAccountButton);
+        public void ClickOnCreateAccount() {
+            Click(createAccountButton);
         }
     }
 }

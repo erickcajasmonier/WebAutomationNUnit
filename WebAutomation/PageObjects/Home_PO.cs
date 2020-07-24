@@ -13,13 +13,13 @@ namespace WebAutomation.PageObjects
         private By signInButton = By.ClassName("login");
         private string homeUrl = "http://automationpractice.com/index.php";
         
-        public String getHomeURL() {
+        public String GetHomeURL() {
             return homeUrl;
         }
         
-        public void clickOnSignIn()
+        public void ClickOnSignIn()
         {
-            click(signInButton);
+            Click(signInButton);
         }
     }
 }

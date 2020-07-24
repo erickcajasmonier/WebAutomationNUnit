@@ -30,139 +30,139 @@ namespace WebAutomation.PageObjects
         private By registerButton = By.Id("submitAccount");
         public string getFormNameAndLastName = null;
 
-        public void fillRegistrationForm(
+        public void FillRegistrationForm(
             string firstName, string lastName, 
-            string day, string month,
-            string year, string state)
+            int day, int month,
+            int year, string state)
         {
-            clickOnMr();
-            typeFirstName(firstName);
-            typeLastName(lastName);
-            getFormNameAndLastName = getFirstName() + " " + getLastName();
-            typePassword();
-            selectDateOfBirth(day, month, year);
-            typeCompany();
-            clickOnNewsLetter();
-            clickOnOptIn();
-            typeAddress1();
-            typeAddress2();
-            typeCity();
-            typePostalCode();
-            selectState(state);
-            typeAdditionalInfo();
-            typeHomePhone();
-            typeMobilePhone();
-            clickOnRegister();
+            ClickOnMr();
+            TypeFirstName(firstName);
+            TypeLastName(lastName);
+            getFormNameAndLastName = GetFirstName() + " " + GetLastName();
+            TypePassword();
+            SelectDateOfBirth(day, month, year);
+            TypeCompany();
+            ClickOnNewsLetter();
+            ClickOnOptIn();
+            TypeAddress1();
+            TypeAddress2();
+            TypeCity();
+            TypePostalCode();
+            SelectState(state);
+            TypeAdditionalInfo();
+            TypeHomePhone();
+            TypeMobilePhone();
+            ClickOnRegister();
         }
 
-        public void clickOnMr()
+        public void ClickOnMr()
         {
-            click(mrRadioButton);
+            Click(mrRadioButton);
         }
 
-        public void typeFirstName(string firstName)
+        public void TypeFirstName(string firstName)
         {
-            sendKeys(firstNameTextBox, firstName);
+            SendKeys(firstNameTextBox, firstName);
         }
 
-        public string getFirstName()
+        public string GetFirstName()
         {
-            return getText(firstNameTextBox);
+            return GetText(firstNameTextBox);
         }
 
-        public void typeLastName(string lastName)
+        public void TypeLastName(string lastName)
         {
-            sendKeys(lastNameTextBox, lastName);
+            SendKeys(lastNameTextBox, lastName);
         }
 
-        public string getLastName()
+        public string GetLastName()
         {
-            return getText(lastNameTextBox);
+            return GetText(lastNameTextBox);
         }
 
-        public void typePassword()
+        public void TypePassword()
         {
-            sendKeys(passwordTextBox, generateRandomLetterAndNumbers(5));
+            SendKeys(passwordTextBox, GenerateRandomLetterAndNumbers(5));
         }
 
-        public void selectDateOfBirth(string day, string month, string year) {
-            selectDayOfBirth(day);
-            selectMonthOfBirth(month);
-            selectYearOfBirth(year);
+        public void SelectDateOfBirth(int day, int month, int year) {
+            SelectDayOfBirth(day.ToString());
+            SelectMonthOfBirth(month.ToString());
+            SelectYearOfBirth(year.ToString());
         }
 
-        public void clickOnNewsLetter()
+        public void ClickOnNewsLetter()
         {
-            click(newsLetterCheckBox);
+            Click(newsLetterCheckBox);
         }
 
-        public void clickOnOptIn()
+        public void ClickOnOptIn()
         {
-            click(optInCheckBox);
+            Click(optInCheckBox);
         }
 
-        public void typeCompany()
+        public void TypeCompany()
         {
-            sendKeys(companyTextBox, generateRandomString(5));
+            SendKeys(companyTextBox, GenerateRandomString(5));
         }
 
-        public void typeAddress1()
+        public void TypeAddress1()
         {
-            sendKeys(address1TextBox, generateRandomString(13));
+            SendKeys(address1TextBox, GenerateRandomString(13));
         }
 
-        public void typeAddress2()
+        public void TypeAddress2()
         {
-            sendKeys(address2TextBox, generateRandomString(7));
+            SendKeys(address2TextBox, GenerateRandomString(7));
         }
 
-        public void typeCity()
+        public void TypeCity()
         {
-            sendKeys(cityTextBox, generateRandomString(5));
+            SendKeys(cityTextBox, GenerateRandomString(5));
         }
 
-        public void selectState(string state)
+        public void SelectState(string state)
         {
-            selectElementInComboBox(stateComboBox, state);
+            SelectElementInComboBox(stateComboBox, state);
         }
 
-        public void typePostalCode()
+        public void TypePostalCode()
         {
-            sendKeys(postalCodeTextBox, generateRandomInt(5));
+            SendKeys(postalCodeTextBox, GenerateRandomInt(5));
         }
 
-        public void typeAdditionalInfo()
+        public void TypeAdditionalInfo()
         {
-            sendKeys(additionalInfoTextBox, generateRandomLetterAndNumbers(25));
+            SendKeys(additionalInfoTextBox, GenerateRandomLetterAndNumbers(25));
         }
 
-        public void typeHomePhone()
+        public void TypeHomePhone()
         {
-            sendKeys(homePhoneTextBox, generateRandomInt(7));
+            SendKeys(homePhoneTextBox, GenerateRandomInt(7));
         }
 
-        public void typeMobilePhone()
+        public void TypeMobilePhone()
         {
-            sendKeys(mobilePhoneTextBox, generateRandomInt(9));
+            SendKeys(mobilePhoneTextBox, GenerateRandomInt(9));
         }
 
-        public void clickOnRegister()
+        public void ClickOnRegister()
         {
-            click(registerButton);
+            Click(registerButton);
         }
 
-        public void selectDayOfBirth(string day) {
-            selectElementInComboBox(dayOfBirthComboBox, day);
+        public void SelectDayOfBirth(string day) {
+            SelectElementInComboBox(dayOfBirthComboBox, day);
         }
 
-        public void selectMonthOfBirth(string month)
+        public void SelectMonthOfBirth(string month)
         {
-            selectElementInComboBox(monthOfBirthComboBox, month);
+            SelectElementInComboBox(monthOfBirthComboBox, month);
         }
 
-        public void selectYearOfBirth(string year)
+        public void SelectYearOfBirth(string year)
         {
-            selectElementInComboBox(yearOfBirthComboBox, year);
+            SelectElementInComboBox(yearOfBirthComboBox, year);
         }
 
 

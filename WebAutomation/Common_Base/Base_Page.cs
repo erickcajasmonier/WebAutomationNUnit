@@ -20,7 +20,7 @@ namespace WebAutomation.BaseTest
         }
 
         //find element by their respective indicators
-        public IWebElement findElementBy(By element)
+        public IWebElement FindElementBy(By element)
         {
             try
             {
@@ -33,9 +33,9 @@ namespace WebAutomation.BaseTest
         }
 
         //check if an element is being displayed
-        public Boolean isDisplayed(By element)
+        public Boolean IsDisplayed(By element)
         {
-            if(findElementBy(element) != null)
+            if(FindElementBy(element) != null)
             {
                 return true;
             }
@@ -46,35 +46,35 @@ namespace WebAutomation.BaseTest
         }
 
         //get the text or value from an element
-        public string getText(By element)
+        public string GetText(By element)
         {
             wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(element));
-            if (findElementBy(element).GetAttribute("value") != null)
+            if (FindElementBy(element).GetAttribute("value") != null)
             {
                 //if the element has a value we will return it
-                return findElementBy(element).GetAttribute("value");
+                return FindElementBy(element).GetAttribute("value");
             }
             else
             {
                 //if the element doesn't have a value we return the text
-                return findElementBy(element).Text;
+                return FindElementBy(element).Text;
             }
         }
 
         //perform a click action to an element
-        public void click(By element)
+        public void Click(By element)
         {
             try
             {
                 wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(element));
-                findElementBy(element).Click();
+                FindElementBy(element).Click();
             } catch(Exception)
             {
                 try
                 {
-                    //If element is not visible try to scroll the page to the element
-                    performScrollToElement(element);
-                    findElementBy(element).Click();
+                    //if element is not visible try to scroll the page to the element
+                    PerformScrollToElement(element);
+                    FindElementBy(element).Click();
                 } catch(Exception exc)
                 {
                     Console.WriteLine(exc);
@@ -83,19 +83,19 @@ namespace WebAutomation.BaseTest
         }
 
         //send text into an input field
-        public void sendKeys(By element, string keys)
+        public void SendKeys(By element, string keys)
         {
             try
             {
                 wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(element));
-                findElementBy(element).SendKeys(keys);
+                FindElementBy(element).SendKeys(keys);
             } catch(Exception)
             {
                 try
                 {
-                    //If element is not visible try to scroll the page to the element
-                    performScrollToElement(element);
-                    findElementBy(element).SendKeys(keys);
+                    //if element is not visible try to scroll the page to the element
+                    PerformScrollToElement(element);
+                    FindElementBy(element).SendKeys(keys);
                 }
                 catch (Exception exc)
                 {
@@ -105,18 +105,18 @@ namespace WebAutomation.BaseTest
         }
 
         //select an item inside a combo box
-        public void selectElementInComboBox(By element, string item)
+        public void SelectElementInComboBox(By element, string item)
         {
             try
             {
                 //select item if the element match the item with the value
-                new SelectElement(findElementBy(element)).SelectByValue(item);
+                new SelectElement(FindElementBy(element)).SelectByValue(item);
             } catch(Exception)
             {
                 try
                 {
                     //select item if the element match the item with the text
-                    new SelectElement(findElementBy(element)).SelectByText(item);
+                    new SelectElement(FindElementBy(element)).SelectByText(item);
                 }
                 catch (Exception exc)
                 {
@@ -125,24 +125,24 @@ namespace WebAutomation.BaseTest
             }
         }
 
-        //Generate a random text with letters and numbers
-        public string generateRandomLetterAndNumbers(int length)
+        //generate a random text with letters and numbers
+        public string GenerateRandomLetterAndNumbers(int length)
         {
             const string chars = "abcdefghijklmnopqrstuvwxyz0123456789";
             return new string(Enumerable.Repeat(chars, length)
               .Select(s => s[random.Next(s.Length)]).ToArray());
         }
 
-        //Generate random letters
-        public string generateRandomString(int length)
+        //generate random letters
+        public string GenerateRandomString(int length)
         {
             const string chars = "abcdefghijklmnopqrstuvwxyz";
             return new string(Enumerable.Repeat(chars, length)
               .Select(s => s[random.Next(s.Length)]).ToArray());
         }
 
-        //Generate random numbers
-        public string generateRandomInt(int length)
+        //generate random numbers
+        public string GenerateRandomInt(int length)
         {
             const string chars = "0123456789";
             return new string(Enumerable.Repeat(chars, length)
@@ -150,14 +150,14 @@ namespace WebAutomation.BaseTest
         }
 
         //perform an scroll until an element is visible
-        public void performScrollToElement(By element) {
+        public void PerformScrollToElement(By element) {
             Actions actions = new Actions(webDriver);
-            actions.MoveToElement(findElementBy(element));
+            actions.MoveToElement(FindElementBy(element));
             actions.Perform();
         }
 
         //get the browser url for an specific page
-        public string getBrowserURL()
+        public string GetBrowserURL()
         {
             return webDriver.Url.ToString();
         }

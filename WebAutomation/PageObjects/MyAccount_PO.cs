@@ -13,19 +13,19 @@ namespace WebAutomation.PageObjects
         private By userNameLabel = By.ClassName("account");
         private By logOutButton = By.ClassName("logout");
 
-        public string getUserNameText()
+        public string GetUserNameText()
         {
-            return getText(userNameLabel);
+            return GetText(userNameLabel);
         }
 
-        public Boolean logOutAvailable()
+        public Boolean LogOutAvailable()
         {
-            return isDisplayed(logOutButton);
+            return IsDisplayed(logOutButton);
         }
 
-        public string getMyAccountUrl()
+        public string GetMyAccountUrl()
         {
-            return getBrowserURL();
+            return GetBrowserURL();
         }
 
     }
